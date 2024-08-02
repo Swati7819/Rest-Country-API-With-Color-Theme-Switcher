@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+body{
+    --background-color: white;
+    --text-color: black;
+    --element-color:white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.back-btn {
+    margin-top: 128px;
+    padding: 6px 24px;
+    border-radius: 4px;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+
+.country-details {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-top: 64px;
+
+
+}
+
+.country-details img {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+
+.details-text {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 64px;
+    max-height: 180px;
+    flex-wrap: wrap;
+}
+
+
+.border-countries {
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+   
+}
+
+.border-countries a {
+    padding: 4px 16px;
+    border-radius: 4px;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+    /* margin-inline: 8px;  */
+    font-size: 14px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+
+}
+
+.country-details-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 32px;
+}
+
+
+.theme-changer {
+    cursor: pointer;
+}
+
+@media (max-width:840px) {
+
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+    }
+
+    .details-text {
+        column-gap: 0px;
+        max-height: unset;
+
+    }
+
+}
